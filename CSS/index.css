@@ -21,6 +21,12 @@ ul {
 	list-style-type: none;
 }
 
+a {
+	text-decoration: none;
+	/* color: none; */
+	/* !important -- this was on stack overflow? */
+}
+
 .container {
 	width: 1000px;
 	margin: 0 auto;
@@ -31,7 +37,7 @@ ul {
 	margin-left: 1rem;
 }
 
-.main-header:hover h1 {
+.main-header__title:hover {
 	font-weight: 50;
 }
 
@@ -76,7 +82,7 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 75vh;
+	min-height: 90vh;
 	margin-bottom: 2rem;
 }
 
@@ -128,6 +134,11 @@ ul {
 	font-weight: 0;
 }
 
+.bio-block__text {
+	line-height: 1.6rem;
+	margin-top: 1.6rem;
+}
+
 .we {
 	font-family: 'IBM Plex Sans', sans-serif;
 	color: #ef048d;
@@ -148,16 +159,79 @@ ul {
 	color: #b74517;
 }
 
-.we-can:hover {
-	color: black;
-}
-a {
-	text-decoration: none;
-}
-.contact-me-block {
+.my-work {
 	background-color: #4f4f4f;
-	height: 200px;
+	height: 300px;
+}
+
+.my-work-block__title {
+	padding-top: 2.2rem;
+	font-size: 2rem;
+	font-weight: 0;
+	text-align: center;
+	color: #bcbcbc;
+}
+
+.contact-me-block {
+	background-color: #282828;
+	height: 295px;
 	text-decoration: none;
+	/* text-align: center; */
+}
+
+.contact-me-block__title {
+	padding-top: 2.5rem;
+	color: #bcbcbc;
+	margin-left: 5rem;
+}
+
+.contact-me-block__text {
+	margin-top: 1.6rem;
+	margin-bottom: 2.5rem;
+	margin-left: 5rem;
+	line-height: 1.6rem;
+	color: #bcbcbc;
+}
+
+.grab-coffee{
+	color: #bcbcbc;
+}
+
+.grab-coffee:hover {
+	font-size: 20px;
+}
+
+.coffee {
+	color: #bcbcbc;
+	margin-left: 5rem;
+	/* border: 1px solid;
+	padding-left: 1rem;
+	padding-right: 1rem; */
+} 
+
+.coffee:hover {
+	font-size: 20px;
+}
+
+.thank-you-block {
+	text-align: center;
+	height: 200px;
+	background-color: #4f4f4f;
+}
+
+.thank-you-block__text {
+	color: #bcbcbc;
+	padding-top: 2rem;
+	line-height: 1.6rem;
+}
+
+.footer__title {
+	color: #bcbcbc;
+	margin-left: 1rem;
+}
+
+.footer__title:hover {
+	font-weight: 50;
 }
 
 
