@@ -4,17 +4,39 @@
 		<title>Eythan Kramm</title>
 		<link rel="stylesheet" type="text/css" href="CSS/index.css">
 		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body>
+		<!-- overlay nav menu -->
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+					<a href="#">About</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Tech Stack</a>
+					<a href="#">Contact</a>
+			</div><!--close overlay-content-->
+		</div><!--close overlay-->
+
+		<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+		</script>
+		
 		<main>
-			<header class="main-header">
+			<header class="main-header" id="main-header">
 				<h1 class="main-header__title">EK</h1>
-					<nav class="menu-button">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</nav>
-			</header>
+						<nav class="menu-button" onclick="openNav()">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</nav><!--close menu-button-->
+			</header><!--close main-header-->
 			
 			<div class="hero-photo">
 				<div class="photo-text__div">
@@ -24,20 +46,20 @@
 				</div><!--close photo-text__div-->
 			</div><!--close hero-photo-->
 
-			<section class="bio">
+			<section class="bio" id="bio">
 				<div class="bio-block">
 					<div class="bio-block__title">
 						<p>Who I Am...</p>
 					</div><!--close bio-block__title-->
 					<div class="bio-block__text">
-						<p class>I am a student at <a href="https://wecancodeit.org/" target="_blank"><span class="we">We</span> <span class="can">Can</span> <span class="code">{Code}</span> <span class="it">IT</span></a>, perparing to start my career in web development.</p>
+						<p class>I am a student at <a href="https://wecancodeit.org/" target="_blank"><span class="we">We</span> <span class="can">Can</span> <span class="code">{Code}</span> <span class="it">IT</span></a>, perparing to start a career in web development.</p>
 						<p>I am creative by nature, and have a passion for personal growth. These traits have lead me to</p>
 						<p>this exciting industry, where creation is the key to growth.</p>
 				    </div><!--close bio-block__text-->
 				</div><!--close Bio-->
 			</section><!--close what-i-do-->
 			
-			<section class="my-work">
+			<section class="my-work" id="my-work">
 				<div class="my-work-block">
 					<div class="my-work-block__title">
 						<p>What I've been up to...</p>
@@ -47,39 +69,55 @@
 					
 				</div><!--close my-work-block-->	
 			</section><!--close my-work-->
+
+			<section class="tech-stack" id="tech-stack">
+				<div class="tech-stack-block">
+					<div class="tech-stack-block__title">
+						<p>Tech Stack</p>
+					</div><!--close tech-stack-block__title-->
+					<div class="tech-stack-block__text">
+						<p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • </p>
+						<p>Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) </p>
+						<p>• AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured </p>
+						<p>Query Language (SQL) • Relational Databases • Source Control / Git</p>
+					</div><!--close class="tech-stack-block__text-->
+				</div><!--close tech-stack-block-->
+			</section>
 			
-			<section class="contact-me">
+			<section class="contact-me" id="contact-me">
 				<div class="contact-me-block">
 					<div class="contact-me-block__title">
 						<h2>Feel free to contact me...</h2>
 						<a href="https://foursquare.com/top-places/columbus/best-places-coffee" target="_blank"><p class="grab-coffee">we can grab coffee</p></a>
 					</div><!--close contact-me-block__title-->
 					<div class="contact-me-block__text">
-						<ul>
-						<strong>Phone</strong>
-						<li>704.402.XXXX</li>
-						<strong>Email</strong>
-						<li>eythan@eythanXXXXX.com</li>
-						</ul>
+						<span class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+						<p>704.402.XXXX</p>
+						<span class="email"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+						<p>eythan@eythanXXXXX.com</p>
 					</div><!--close contact-me-block__text-->
 					<div class="coffee">
-						<a href="https://www.starbucks.com/shop/card/egift?&utm_term=starbucks+gift+card+purchase&utm_campaign=RE+-+Brand+-+Gift+Card+-+Exact&utm_medium=cpc&utm_source=google" target="_blank"><small>I like coffee...</small></a>
+						<a class="i-like-coffee" href="https://www.starbucks.com/shop/card/egift?&utm_term=starbucks+gift+card+purchase&utm_campaign=RE+-+Brand+-+Gift+Card+-+Exact&utm_medium=cpc&utm_source=google" target="_blank"><small>I like coffee...</small></a>
 					</div><!--close coffee-->
 				</div><!--close contact-me-block-->
 			</section><!--close contact-me-->
 				
-				<!-- <h2>Social Media</h2>
-				<p>Chceck out my <a href="https://www.linkedin.com/in/eythan-kramm-612017100/" target="_blank">LinkedIn</a> if you wanna see what I used to do sense I have not updated it...</p> -->
-			<section class="thank-you">
+			<section class="thank-you" id="thank-you">
 				<div class="thank-you-block">
 					<footer class="footer">
 						<div class="thank-you-block__text">
-							<h1 class="footer__title">EK</h1>
+							<h1><a href="#main-header" class="footer__title">EK</a></h1>
 							<small><p>Thanks for hanging out</p></small>
 							<small><p>Be sure to check me out on social media</p></small>
-				    	</div><!--close thank-you-block__text-->
+						</div><!--close thank-you-block__text-->
+						<div class="social-media">
+							<a class="linkedin" href="https://www.linkedin.com/in/eekramm/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+							<a class="facebook" href="https://www.facebook.com/emanuelkramm?ref=bookmarks" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+							<a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+							<a class="github" href="https://github.com/eekramm" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+						</div><!--close social-media-->
 					</footer><!--close footer-->
-			    </div><!--close thank-you-block-->
+			  </div><!--close thank-you-block-->
 			</section><!--close thank-you-->
 			<!-- </div>close container -->
 		</main>
