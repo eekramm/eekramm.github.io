@@ -126,7 +126,7 @@ a {
 
 .bio-block {
 	background-color: #282828;
-	height: 275px;
+	height: 450px;
 	text-align: center;
 }
 
@@ -163,6 +163,15 @@ a {
 	color: #b74517;
 }
 
+.my-pic img {
+	height: 200px;
+	border-radius: 50%;
+	width: 200px;
+	margin-top: 3.5rem;
+	filter: opacity(75%);
+	border: 1px solid #bcbcbc;
+}
+
 .my-work {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/code.jpg);
 	background-position: 50%, 50%;
@@ -179,6 +188,26 @@ a {
 	/* text-align: center; */
 	color: #bcbcbc;
 	margin-left: 5rem;
+}
+
+.my-work__content {
+		display: grid;
+		width: 80%;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 1rem  ;
+		margin: 0 auto;
+		padding-top: 6rem;
+		color: #bcbcbc;
+}
+
+.my-work__content img {
+    margin-top: .5rem;
+    width: 60%;
+    border: 1px solid #bcbcbc; 
+}
+
+.my-work__content img:hover {
+	content: url(../images/hoverproject.jpg)
 }
 
 .tech-stack {
@@ -207,7 +236,7 @@ a {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 295px;
+	height: 310px;
 }
 
 .contact-me-block__title {
@@ -229,7 +258,7 @@ a {
 }
 
 .grab-coffee:hover {
-	font-size: 20px;
+	color: #e3522e;
 }
 
 .coffee {
@@ -239,10 +268,6 @@ a {
 	padding-left: 1rem;
 	padding-right: 1rem; */
 } 
-
-.coffee:hover {
-	font-size: 20px;
-}
 
 .phone {
 	font-size: 1.5rem;
@@ -254,6 +279,10 @@ a {
 
 .i-like-coffee {
 	color: #bcbcbc;
+}
+
+.i-like-coffee:hover {
+	color: #e3522e;
 }
 .thank-you-block {
 	text-align: center;
