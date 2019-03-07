@@ -14,7 +14,7 @@
 				function closeNav() {
 					document.getElementById("myNav").style.width = "0%";
 				}
-				</script>
+			</script>
 
 	</head>
 	<body>
@@ -31,7 +31,7 @@
 		
 		<main>
 			<header class="main-header" id="main-header">
-				<h1 class="main-header__title">EK</h1>
+				<h1> <a href="#hero" class="main-header__title">EK</a></h1>
 						<nav class="menu-button" onclick="openNav()">
 							<div class="bar1"></div>
 							<div class="bar2"></div>
@@ -39,7 +39,7 @@
 						</nav><!--close menu-button-->
 			</header><!--close main-header-->
 			
-			<div class="hero-photo">
+			<div class="hero-photo" id="hero">
 				<div class="photo-text__div">
 					<h1 class="hero-photo__text">Eythan Kramm</h1>
 					<p class="hero-photo__subtext">Junior Developer</p>
@@ -57,7 +57,7 @@
 						<p>I am creative by nature, and have a passion for personal growth. These traits have lead me to</p>
 						<p>this exciting industry, where creation is the key to growth.</p>
 							<div class="my-pic">
-									<img src="./images/headshot.jpg" alt="Headshot">
+									<img src="./images/eythankrammsq.jpg" alt="Headshot">
 							</div>
 				    </div><!--close bio-block__text-->
 				</div><!--close Bio-->
@@ -101,15 +101,13 @@
 			
 			<section class="contact-me" id="contact-me">
 				<div class="contact-me-block">
-					<div class="contact-me-block__title">
-						<h2>Feel free to contact me...</h2>
+					<div class="contact-me-block__top">
+						<p class="contact-me-block__title">Feel free to contact me...</p>
 						<a href="https://foursquare.com/top-places/columbus/best-places-coffee" target="_blank"><p class="grab-coffee">Let's grab coffee</p></a>
 					</div><!--close contact-me-block__title-->
 					<div class="contact-me-block__text">
-						<span class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
-						<p>704.402.XXXX</p>
-						<span class="email"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-						<p>eythan@eythanXXXXX.com</p>
+						<p class="phone-line" ><span class="phone"><i class="fa fa-phone-square" aria-hidden="true"></i></span>704.402.XXXX</p>
+						<p class="email-line"><span class="email"><i class="fa fa-envelope" aria-hidden="true"></i></span>eythan@eythanXXXXX.com</p>
 					</div><!--close contact-me-block__text-->
 					<div class="coffee">
 						<a class="i-like-coffee" href="https://www.starbucks.com/shop/card/egift?&utm_term=starbucks+gift+card+purchase&utm_campaign=RE+-+Brand+-+Gift+Card+-+Exact&utm_medium=cpc&utm_source=google" target="_blank"><small>otherwise click here</small></a>
@@ -121,7 +119,7 @@
 				<div class="thank-you-block">
 					<footer class="footer">
 						<div class="thank-you-block__text">
-							<h1><a href="#main-header" class="footer__title">EK</a></h1>
+							<h1><a href="#hero" class="footer__title">EK</a></h1>
 							<small><p>Thanks for hanging out</p></small>
 							<small><p>Be sure to check me out on social media</p></small>
 						</div><!--close thank-you-block__text-->
