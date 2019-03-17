@@ -1,0 +1,23 @@
+{
+  "name": "eekramm.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eekramm/eekramm.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eekramm/eekramm.github.io/issues"
+  },
+  "homepage": "https://github.com/eekramm/eekramm.github.io#readme",
+  "dependencies": {
+    "jest": "^24.5.0"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CSS/universal.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="icon" type="image/png" href="./images/EK.png">
+    <title>Document</title>
+</head>
+<body>
+        <div  class="overlay" id="myNav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                        <a href="index.html" onclick="closeNav()">HOME</a>
+                        <a href="about.html" onclick="closeNav()">ABOUT</a>
+                        <a href="portfolio.html" onclick="closeNav()">PORTFOLIO</a>
+                        <a href="tech.html" onclick="closeNav()">TECH STACK</a>
+                        <a href="contact.html" onclick="closeNav()">CONTACT</a>
+                        <a href="index1.html" onclick="closeNav()">BETA</a>
+                </div><!--close overlay-content-->
+            </div><!--close overlay-->
+    <main>
+            <header class="main-header" id="main-header">
+                    <h1> <a href="index.html" class="main-header__title">EK</a></h1>
+                            <nav class="menu-button" onclick="openNav()">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </nav><!--close menu-button-->
+                </header><!--close main-header-->
+    </main>
+    <h1 class="contact">Contact Page</h1>
+    <script src="./JS/universal.js"></script>
+    <script src="./JS/contact.js"></script>
+</body>
+</html>
