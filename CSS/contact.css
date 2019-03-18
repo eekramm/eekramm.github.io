@@ -1,3 +1,37 @@
-.contact {
-    padding-top: 5rem;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+    background-color: #545454;
+}
+
+.hero {
+    align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	url(../images/phone.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 38%;
+	display: flex;
+	justify-content: center;
+    min-height: 45vh;
+}
+
+.hero-title__text {
+    color: #bcbcbc;
+    font-size: 6rem;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+    font-size: 4rem;
+    color: #e3522e;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./CSS/universal.css">
     <link rel="stylesheet" href="./CSS/about.css">
     <link rel="icon" type="image/png" href="./images/EK.png">
@@ -11,27 +12,113 @@
 </head>
 <body>
         <div  class="overlay" id="myNav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="closer closebtn">&times;</a>
                 <div class="overlay-content">
-                        <a href="index.html" onclick="closeNav()">HOME</a>
-                        <a href="about.html" onclick="closeNav()">ABOUT</a>
-                        <a href="portfolio.html" onclick="closeNav()">PORTFOLIO</a>
-                        <a href="tech.html" onclick="closeNav()">TECH STACK</a>
-                        <a href="contact.html" onclick="closeNav()">CONTACT</a>
-                        <a href="index1.html" onclick="closeNav()">BETA</a>
+                        <a href="index.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="portfolio.html">PORTFOLIO</a>
+                        <a href="tech.html">TECH STACK</a>
+                        <a href="contact.html">CONTACT</a>
+                        <a href="index1.html">BETA</a>
                 </div><!--close overlay-content-->
             </div><!--close overlay-->
-   <main>
+   <main class="main">
         <header class="main-header" id="main-header">
 				<h1> <a href="index.html" class="main-header__title">EK</a></h1>
-						<nav class="menu-button" onclick="openNav()">
-							<div class="bar1"></div>
-							<div class="bar2"></div>
-							<div class="bar3"></div>
-						</nav><!--close menu-button-->
-			</header><!--close main-header-->
-   </main>         
-    <h1 class="about">About Page</h1>
+				<nav class="menu-button">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</nav><!--close menu-button-->
+        </header><!--close main-header-->
+        <section class="hero">
+                <div class="hero-title">
+                        <h1 class="hero-title__text">Who I Am</h1>
+                </div>
+        </section>
+
+        <section class="home">
+            <div class="home-grid">
+                <div class="home-icon">
+                    <img class="home-icon__img" src="./images/home.png" alt="home-icon">
+                </div>
+                <div class="home-text">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="family">
+            <div class="family-grid">
+                <div class="family-text">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+                <div class="family-icon">
+                    <img class="family-icon__img" src="./images/family.png" alt="home-icon">
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="work-grid">
+                <div class="work-icon">
+                    <img class="work-icon__img" src="./images/work.png" alt="home-icon">
+                </div>
+                <div class="work-text">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            </div>
+        </section>
+
+        <section class="programming">
+            <div class="programming-grid">
+                <div class="programming-text">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+                <div class="programming-icon">
+                    <img class="programming-icon__img" src="./images/programming.png" alt="home-icon">
+            </div>
+        </section>
+
+        <section class="barbell">
+            <div class="barbell-grid">
+                <div class="barbell-icon">
+                    <img class="barbell-icon__img" src="./images/barbell.png" alt="home-icon">
+                </div>
+                <div class="barbell-text">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            </div>
+        </section>
+
+        <section class="dinner">
+            <div class="dinner-grid">
+                <div class="dinner-text">
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+                <div class="dinner-icon">
+                    <img class="dinner-icon__img" src="./images/dinner.png" alt="home-icon">
+            </div>
+        </section>
+        <section class="photo-section">
+            <img class="photo" src="./images/eythankrammsq.jpg" alt="head shot">
+        </section>
+   </main>
+   <footer class="thank-you" id="thank-you">
+        <section class="thank-you-block">
+            <div class="footer">
+                <div class="thank-you-block__text">
+                    <h1><a href="#hero" class="footer__title">EK</a></h1>
+                    <small><p>Thanks for hanging out</p></small>
+                    <small><p>Be sure to check me out on social media</p></small>
+                </div>
+                <div class="social-media">
+                    <a class="linkedin" href="https://www.linkedin.com/in/eekramm/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a class="facebook" href="https://www.facebook.com/emanuelkramm?ref=bookmarks" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a class="github" href="https://github.com/eekramm" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+      </section>
+    </footer>         
     <script src="./JS/universal.js"></script>
     <script src="./JS/about.js"></script>
 </body>

@@ -1,3 +1,66 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+    background-color: #545454;
+}
+
+.hero {
+    align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+	url(../images/tech.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 38%;
+	display: flex;
+	justify-content: center;
+    min-height: 45vh;
+}
+
+.hero-title__text {
+    color: #bcbcbc;
+    font-size: 6rem;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
 .tech {
-    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    border: 4px solid #e3522e;
+    margin-left: 1rem;
+    background-color: #ffffff;
+    border-radius: 25px 0px 0px 25px;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    border: 4px solid #e3522e;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    background-color: #ffffff;
+    border-radius: 0px 25px 25px 0px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }

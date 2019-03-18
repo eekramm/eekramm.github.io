@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+  
 	<head>
 		<title>Eythan Kramm</title>
 		<link rel="stylesheet" type="text/css" href="CSS/index.css">
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" type="image/png" href="./images/EK.png">
 	</head>
+  
 	<body>
 		<!-- overlay nav menu -->
 		<div  class="overlay" id="myNav">
@@ -22,6 +24,7 @@
 		</div><!--close overlay-->
 		
 		<main>
+      
 			<header class="main-header" id="main-header">
 				<h1> <a href="index.html" class="main-header__title">EK</a></h1>
 						<nav class="menu-button">
@@ -37,62 +40,148 @@
 					<p class="hero-photo__subtext">Web Developer</p>
 					<!-- <p class="portfolio-button">Portfolio</p> -->
 				</div><!--close photo-text__div-->
-			</div><!--close hero-photo-->
+      </div><!--close hero-photo-->
 
-			<section class="bio" id="bio">
-				<div class="bio-block">
-					<div class="bio-block__title">
-						<p>Who I Am...</p>
-					</div><!--close bio-block__title-->
-					<div class="bio-block__text">
-						<p class>I am a student at <a href="https://wecancodeit.org/" target="_blank"><span class="we">We</span> <span class="can">Can</span> <span class="code">{Code}</span> <span class="it">IT</span></a>, perparing to start a career in web development.</p>
-						<p>I am creative by nature, and have a passion for personal growth. These traits have lead me to</p>
-						<p>this exciting industry, where creation is the key to growth.</p>
-							<div class="my-pic">
-									<img src="./images/eythankrammsq.jpg" alt="Headshot">
-							</div>
-				    </div><!--close bio-block__text-->
-				</div><!--close Bio-->
-			</section><!--close what-i-do-->
+      <section class="bio" id="bio">
+        <div class="bio-icon home-icon">
+          <img src="./images/home.png" alt="house icon" />
+        </div>
+        <div class="modal home-modal">
+          <div class="modal-content">
+            <span class="close-home">&times;</span>
+            <p>This will be about everywhere I have lived!</p>
+          </div>
+        </div>
+
+        <div class="bio-icon family-icon">
+          <img src="./images/family.png" alt="family icon"/>
+        </div>
+        <div class="modal family-modal">
+          <div class="modal-content">
+            <span class="close-family">&times;</span>
+            <p>This will be about my family!</p>
+          </div>
+        </div>
+
+        <div class="bio-icon work-icon"> 
+          <img src="./images/work.png" alt="breifcase icon"/>
+        </div>
+        <div class="modal work-modal">
+          <div class="modal-content">
+            <span class="close-work">&times;</span>
+            <p>This will be about every where I've worked!</p>
+          </div>
+        </div>
+
+        <div class="bio-icon programming-icon">
+          <img src="./images/programming.png" alt="computer icon"/>
+        </div>
+        <div class="modal programming-modal">
+          <div class="modal-content">
+            <span class="close-programming">&times;</span>
+            <p>This will be about programming!</p>
+          </div>
+        </div>
+
+        <div class="bio-icon barbell-icon">
+          <img src="./images/barbell.png" alt="dumbell icon"/>
+        </div>
+        <div class="modal barbell-modal">
+          <div class="modal-content">
+            <span class="close-barbell">&times;</span>
+            <p>This will be about fitness!</p>
+          </div>
+        </div>
+
+        <div class="bio-icon dinner-icon">
+          <img src="./images/dinner.png" alt="plate icon"/>
+        </div>
+        <div class="modal dinner-modal">
+          <div class="modal-content">
+            <span class="close-dinner">&times;</span>
+            <p>This will be about hot wings!</p>
+          </div>
+        </div>    
+      </section><!--close what-i-do-->
 			
 			<section class="my-work" id="my-work">
-				<div class="my-work-block">
-					<div class="my-work-block__title">
-						<p>What I've been up to...</p>
-					</div><!--close my-work-block__title-->	
-					<div class="my-work__content">
-						<article class="first-project">
-							<h3>Portfolio Page CSS/HTML</h3>
-							<a href="https://github.com/eekramm/eekramm.github.io" target="_blank"><img src="./images/hospital.jpg" alt="Code Base Screenshot"></a>
-						</article><!--close first project-->
-						<article class="second-project">
-							<h3>Virtual Hospital Java</h3>
-							<a href="https://github.com/eekramm/hospital" target="_blank"><img src="./images/hospital.jpg" alt="Code Base Screenshot"></a>
-						</article><!--close second-project-->
-						<article class="third-project">
-							<h3>Virtual Pet Java</h3>
-							<a href="https://github.com/eekramm/virutal-pet" target="_blank"><img src="./images/hospital.jpg" alt="Code Base Screenshot"></a>
-						</article><!--close third-project-->
-					</div><!--close my-work__content-->
-				</div><!--close my-work-block-->	
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img class="slide-img" src="./images/project1.jpg">
+            <div class="text">Project One</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img class="slide-img" src="./images/project2.jpg">
+            <div class="text">Project Two</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img class="slide-img" src="./images/code.jpg">
+            <div class="text">Project Three</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img class="slide-img" src="./images/project4.jpg">
+            <div class="text">Project Four</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img class="slide-img" src="./images/project5.jpg">
+            <div class="text">Project Five</div>
+          </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+          <!-- The dots/circles -->
+          <div class="dot-div">
+            <span class="dot dot1" onclick="currentSlide(1)"></span> 
+            <span class="dot dot2" onclick="currentSlide(2)"></span> 
+            <span class="dot dot3" onclick="currentSlide(3)"></span>
+            <span class="dot dot4" onclick="currentSlide(4)"></span>
+            <span class="dot dot5" onclick="currentSlide(5)"></span>
+          </div>
 			</section><!--close my-work-->
 
 			<section class="tech-stack" id="tech-stack">
-				<div class="tech-stack-block">
-					<div class="tech-stack-block__title">
-						<p>What I know</p>
-					</div><!--close tech-stack-block__title-->
-					<div class="tech-stack-block__text">
-						<p>Java • Spring • Hibernate • JPA • JavaScript • MVC • HTML5 • CSS3 • </p>
-						<p>Flexbox • Grid • TDD • Agile (Scrum) • Object Oriented Programming (OOP) </p>
-						<p>• AJAX • JSON • Restful APIs • Responsive Design / Mobile • Structured </p>
-						<p>Query Language (SQL) • Relational Databases • Source Control / Git</p>
-					</div><!--close class="tech-stack-block__text-->
-				</div><!--close tech-stack-block-->
+        <div class="tech-stack-grid">
+          <div class="java">Java</div>
+          <div class="spring">Spring</div>
+          <div class="hibernate">Hibernate</div>
+          <div class="jpa">JPA </div>
+          <div class="javascript">JavaScript</div>
+          <div class="mvc">MVC</div>
+          <div class="html5">HTML5</div>
+          <div class="css3">CSS3</div>
+          <div class="flexbox">Flexbox</div>
+          <div class="grid">Grid</div>
+          <div class="tdd">TDD</div>
+          <div class="agile">Agile (Scrum)</div>
+          <div class="oop">Object Oriented Programming (OOP)</div>
+          <div class="ajax">AJAX</div>
+          <div class="json">JSON</div>
+          <div class="api">Restful APIs</div>
+          <div class="mobile">Responsive Design / Mobile</div>
+          <div class="strutured">Structured</div>
+          <div class="sql">Query Language (SQL)</div>
+          <div class="relational">Relational Databases</div>
+          <div class="git">Source Control / Git</div>
+        </div>
 			</section>
 			
 			<section class="contact-me" id="contact-me">
-				<div class="contact-me-block">
+        <div class="contact-me-block">
 					<div class="contact-me-block__top">
 						<p class="contact-me-block__title">Feel free to contact me...</p>
 						<a href="https://foursquare.com/top-places/columbus/best-places-coffee" target="_blank"><p class="grab-coffee">Let's grab coffee</p></a>
@@ -107,9 +196,9 @@
 				</div><!--close contact-me-block-->
 			</section><!--close contact-me-->
 				
-			<section class="thank-you" id="thank-you">
-				<div class="thank-you-block">
-					<footer class="footer">
+			<footer class="thank-you" id="thank-you">
+				<section class="thank-you-block">
+					<div class="footer">
 						<div class="thank-you-block__text">
 							<h1><a href="#hero" class="footer__title">EK</a></h1>
 							<small><p>Thanks for hanging out</p></small>
@@ -121,13 +210,15 @@
 							<a class="twitter" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 							<a class="github" href="https://github.com/eekramm" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
 						</div><!--close social-media-->
-					</footer><!--close footer-->
-			  </div><!--close thank-you-block-->
-			</section><!--close thank-you-->
-			<!-- </div>close container -->
+					</div><!--close footer-->
+			  </section><!--close thank-you-block-->
+			</footer><!--close thank-you-->
+      
 		</main>
+    
 		<script src="./JS/universal.js"></script>
 		<script src="./JS/index.js"></script>
+    
 	</body>
 </html>
 

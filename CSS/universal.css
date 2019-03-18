@@ -103,5 +103,75 @@ a {
 	top: 20px;
 	right: 45px;
 	font-size: 60px;
-  }
+	}
+
+	.closebtn:hover{
+		cursor: pointer;
+	}
+	
+	.thank-you-block {
+		text-align: center;
+		height: 210px;
+		background-color: #545454;
+	}
+	
+	.thank-you-block__text {
+		color: #bcbcbc;
+		padding-top: 2rem;
+		line-height: 1.5rem;
+	}
+	
+	.footer__title {
+		color: #bcbcbc;
+		margin-left: 1rem;
+		cursor: pointer;
+		padding-bottom: 1rem;
+	}
+	
+	.footer__title:hover {
+		font-weight: 50;
+	}
+	
+	.social-media {
+		padding-top: 2.5rem;
+	}	
+	
+	.linkedin {
+		font-size: 2rem;
+		padding-right: 1rem;
+		color: #0077b5;
+	}
+	
+	.linkedin:hover {
+		color: #bcbcbc;
+	}
+	
+	.facebook {
+		font-size: 2rem;
+		padding-right: 1rem;
+		color: #4267b2;
+	}
+	
+	.facebook:hover {
+		color: #bcbcbc;
+	}
+	
+	.twitter {
+		font-size: 2rem;
+		padding-right: 1rem;
+		color: #1da1f2;
+	}
+	
+	.twitter:hover {
+		color: #bcbcbc;
+	}
+	
+	.github {
+		font-size: 2rem;
+		color: #ffffff;
+	}
+	
+	.github:hover {
+		color: #bcbcbc;
+	}
 

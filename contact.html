@@ -10,28 +10,35 @@
     <title>Document</title>
 </head>
 <body>
-        <div  class="overlay" id="myNav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class="overlay-content">
-                        <a href="index.html" onclick="closeNav()">HOME</a>
-                        <a href="about.html" onclick="closeNav()">ABOUT</a>
-                        <a href="portfolio.html" onclick="closeNav()">PORTFOLIO</a>
-                        <a href="tech.html" onclick="closeNav()">TECH STACK</a>
-                        <a href="contact.html" onclick="closeNav()">CONTACT</a>
-                        <a href="index1.html" onclick="closeNav()">BETA</a>
-                </div><!--close overlay-content-->
-            </div><!--close overlay-->
-    <main>
-            <header class="main-header" id="main-header">
-                    <h1> <a href="index.html" class="main-header__title">EK</a></h1>
-                            <nav class="menu-button" onclick="openNav()">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                            </nav><!--close menu-button-->
-                </header><!--close main-header-->
+    <div  class="overlay" id="myNav">
+        <a href="javascript:void(0)" class="closer closebtn">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="tech.html">TECH STACK</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="index1.html">BETA</a>
+        </div>
+    </div>
+    <main class="main">
+        <header class="main-header" id="main-header">
+            <h1> <a href="index.html" class="main-header__title">EK</a></h1>
+                <nav class="menu-button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </nav>
+        </header>
+        <section class="hero">
+            <div class="hero-title">
+                <h1 class="hero-title__text">Contact Me</h1>
+            </div>
+        </section>
+        <section class="message">
+                <p>Under Construction</p>
+        </section>
     </main>
-    <h1 class="contact">Contact Page</h1>
     <script src="./JS/universal.js"></script>
     <script src="./JS/contact.js"></script>
 </body>
